@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/accessibility_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/item_bg_ripple"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/accessibility_on_off_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/accessibility_forward"
+                android:layout_toEndOf="@id/accessibility_on_off_img"
+                android:gravity="center_vertical|start"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:singleLine="true"
+                android:text="无障碍服务权限"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/accessibility_forward"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/forward" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/device_admin_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/item_bg_ripple"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/device_admin_on_off_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/device_admin_forward"
+                android:layout_toEndOf="@id/device_admin_on_off_img"
+                android:gravity="center_vertical|start"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:singleLine="true"
+                android:text="设备管理器权限"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/device_admin_forward"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/forward" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/batteryIgnore_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/item_bg_ripple"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/batteryIgnore_on_off_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/batteryIgnore_forward"
+                android:layout_toEndOf="@id/batteryIgnore_on_off_img"
+                android:gravity="center_vertical|start"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:singleLine="true"
+                android:text="忽略电池优化权限"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/batteryIgnore_forward"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/forward" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/item_bg_ripple"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/notification_on_off_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/notification_forward"
+                android:layout_toEndOf="@id/notification_on_off_img"
+                android:gravity="center_vertical|start"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:singleLine="true"
+                android:text="发送前台通知保活"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/notification_forward"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/forward" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/floating_window_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/item_bg_ripple"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/floating_window_on_off_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/floating_window_forward"
+                android:layout_toEndOf="@id/floating_window_on_off_img"
+                android:gravity="center_vertical|start"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:singleLine="true"
+                android:text="零像素点悬浮窗保活"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/floating_window_forward"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/forward" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="15dp"
+            android:requiresFadingEdge="vertical"
+            android:scrollbars="none">
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/authorizationQuestion"
+                android:textSize="12sp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/view_no_vip" />
+</FrameLayout>
